@@ -16,34 +16,15 @@ export const Tile = (class extends Component<TileComponentProps> {
     const { count } = this.state;
     const { InfernoExtension } = piral;
 
-    return createElement(
-      'div',
-      {
-        class: 'tile',
-      },
-      createElement('h3', {}, `Inferno: ${count}`),
-      createElement(
-        'p',
-        {},
-        `${rows} rows and ${columns} columns `,
-        createElement(InfernoExtension as any, {
-          name: 'smiley',
-        }),
-      ),
-      createElement(
-        'button',
-        {
-          onClick: this.increment,
-        },
-        '+',
-      ),
-      createElement(
-        'button',
-        {
-          onClick: this.decrement,
-        },
-        '-',
-      ),
+    return (
+      <div class="tile">
+        <h3>Inferno {count}</h3>
+        <p>
+          {rows} rows and {columns} columns <InfernoExtension name="smiley" />
+        </p>
+        <button onClick={this.increment}>+</button>
+        <button onClick={this.decrement}>-</button>
+      </div>
     );
   }
 } as any) as ComponentType<TileComponentProps>;

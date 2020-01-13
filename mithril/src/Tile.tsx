@@ -8,34 +8,15 @@ export const Tile = {
     const { rows, columns, piral } = vnode.attrs;
     const { MithrilExtension } = piral;
 
-    return m(
-      'div',
-      {
-        class: 'tile',
-      },
-      m('h3', {}, `Mithril: ${this.count}`),
-      m(
-        'p',
-        {},
-        `${rows} rows and ${columns} columns `,
-        m(MithrilExtension, {
-          name: 'smiley',
-        }),
-      ),
-      m(
-        'button',
-        {
-          onclick: () => this.count++,
-        },
-        '+',
-      ),
-      m(
-        'button',
-        {
-          onclick: () => this.count--,
-        },
-        '-',
-      ),
+    return (
+      <div class="tile">
+        <h3>Mithril: {this.count}</h3>
+        <p>
+          {rows} rows and {columns} columns <MithrilExtension name="smiley" />
+        </p>
+        <button onclick={() => this.count++}>+</button>
+        <button onclick={() => this.count--}>-</button>
+      </div>
     );
   },
 };

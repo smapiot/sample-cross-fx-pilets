@@ -13,37 +13,11 @@ export const actions = {
 export const Tile: Component<TileComponentProps, typeof state, typeof actions> = props => {
   const { HyperappExtension } = props.piral;
 
-  return (state, actions) =>
-    h(
-      'div',
-      {
-        class: 'tile',
-      },
-      h('h3', {}, `Hyperapp: ${state.count}`),
-      h(
-        'p',
-        {},
-        `${props.rows} rows and ${props.columns} columns `,
-        HyperappExtension(
-          {
-            name: 'smiley',
-          },
-          [],
-        ),
-      ),
-      h(
-        'button',
-        {
-          onclick: () => actions.up(1),
-        },
-        '+',
-      ),
-      h(
-        'button',
-        {
-          onclick: () => actions.down(1),
-        },
-        '-',
-      ),
-    );
-};
+  return (state, actions) => (
+    <div class="tile">
+      <h3>Hyperapp: {state.count}</h3>
+      <p>{props.rows} rows and {props.columns} columns <HyperappExtension name="smiley" /></p>
+      <button onclick={() => actions.up(1)}>+</button>
+      <button onclick={() => actions.down(1)}>-</button>
+    </div>
+  );

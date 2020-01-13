@@ -15,34 +15,15 @@ export class Tile extends Component<TileComponentProps> {
     const { count } = this.state;
     const { PreactExtension } = piral;
 
-    return createElement(
-      'div',
-      {
-        class: 'tile',
-      },
-      createElement('h3', {}, `Preact: ${count}`),
-      createElement(
-        'p',
-        {},
-        `${rows} rows and ${columns} columns `,
-        createElement(PreactExtension, {
-          name: 'smiley',
-        }),
-      ),
-      createElement(
-        'button',
-        {
-          onClick: this.increment,
-        },
-        '+',
-      ),
-      createElement(
-        'button',
-        {
-          onClick: this.decrement,
-        },
-        '-',
-      ),
+    return (
+      <div class="tile">
+        <h3>Preact {count}</h3>
+        <p>
+          {rows} rows and {columns} columns <PreactExtension name="smiley" />
+        </p>
+        <button onClick={this.increment}>+</button>
+        <button onClick={this.decrement}>-</button>
+      </div>
     );
   }
 }
