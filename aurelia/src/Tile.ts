@@ -1,4 +1,3 @@
-import { TileComponentProps } from 'sample-cross-fx';
 import { inlineView, inject } from 'aurelia-framework';
 
 @inlineView(`
@@ -16,7 +15,7 @@ import { inlineView, inject } from 'aurelia-framework';
 export class Tile {
   private counter = 0;
 
-  constructor(@inject('props') public props: TileComponentProps) {}
+  constructor(@inject('props') public props: any) {}
 
   increment() {
     this.counter = this.counter + 1;

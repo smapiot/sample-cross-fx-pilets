@@ -1,15 +1,12 @@
 import { LitElement, customElement, html, property } from 'lit-element';
-import { unsafeHTML } from 'lit-html/directives/unsafe-html';
-import { TileComponentProps } from 'sample-cross-fx';
 
-export function createTile(extensionName: string) {
+export function createTile() {
   const name = 'my-tile';
-  const extension = `<${extensionName} name="smiley"></${extensionName}>`;
 
   @customElement(name)
   class MyTile extends LitElement {
     @property() counter = 0;
-    @property({ type: Object }) props: TileComponentProps;
+    @property({ type: Object }) props: any;
 
     firstUpdated() {
       const style = this.shadowRoot.ownerDocument.createElement('style');
@@ -31,7 +28,7 @@ export function createTile(extensionName: string) {
         <div class="tile">
           <h3>LitElement: ${this.counter}</h3>
           <p>
-            ${this.props.rows} rows and ${this.props.columns} columns ${unsafeHTML(extension)}
+            ${this.props.rows} rows and ${this.props.columns} columns <litel-extension name="smiley"></litel-extension>
           </p>
           <button @click="${() => this.counter++}">Increment</button>
           <button @click="${() => this.counter--}">Decrement</button>

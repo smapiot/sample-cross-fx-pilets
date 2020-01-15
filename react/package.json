@@ -129,8 +129,8 @@
     "postUpgrade": ""
   },
   "scripts": {
-    "start": "pilet debug src/index.ts",
-    "build": "pilet build src/index.ts",
+    "start": "pilet debug src/index.tsx",
+    "build": "pilet build src/index.tsx",
     "upgrade-pilet": "pilet upgrade --force-overwrite yes"
   },
   "keywords": ["sample", "pilet", "piral", "cross-fx", "react"],

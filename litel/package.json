@@ -83,6 +83,9 @@
     "path-to-regexp": "*",
     "sample-cross-fx": "*"
   },
+  "browserslist": [
+    "last 1 chrome versions"
+  ],
   "files": [
     "dist"
   ],

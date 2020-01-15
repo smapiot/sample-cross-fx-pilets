@@ -1,5 +1,4 @@
 import { Component, Inject } from '@angular/core';
-import { TileComponentProps } from 'sample-cross-fx';
 
 @Component({
   template: `
@@ -17,7 +16,7 @@ import { TileComponentProps } from 'sample-cross-fx';
 export class TileComponent {
   public counter = 0;
 
-  constructor(@Inject('Props') public props: TileComponentProps) {}
+  constructor(@Inject('Props') public props: any) {}
 
   increment() {
     this.counter += 1;

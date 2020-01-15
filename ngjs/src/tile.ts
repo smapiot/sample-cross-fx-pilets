@@ -29,4 +29,5 @@ export function createTile(extensionName: string) {
       },
     ],
   });
+  return Tile;
 }
