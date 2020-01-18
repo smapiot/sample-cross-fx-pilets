@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "dependencies": {},
   "devDependencies": {
-    "sample-cross-fx": "0.10.0-pre.839",
+    "sample-cross-fx": "next",
     "@types/react": "^16.8.2",
     "@types/react-dom": "^16.8.0",
     "@types/react-router": "^5.0.0",
@@ -89,7 +89,7 @@
   "piral": {
     "comment": "Keep this section to allow running `piral upgrade`.",
     "name": "sample-cross-fx",
-    "version": "0.10.0-pre.839",
+    "version": "0.10.0-pre.843",
     "tooling": "0.10.0-pre.839",
     "externals": [
       "@angular/common",
@@ -129,11 +129,18 @@
     "postUpgrade": ""
   },
   "scripts": {
-    "start": "pilet debug src/index.ts",
-    "build": "pilet build src/index.ts",
-    "upgrade-pilet": "pilet upgrade --force-overwrite yes"
+    "start": "pilet debug",
+    "build": "pilet build",
+    "upgrade-pilet": "pilet upgrade --force-overwrite yes",
+    "upgrade": "pilet upgrade"
   },
-  "keywords": ["sample", "pilet", "piral", "cross-fx", "preact"],
+  "keywords": [
+    "sample",
+    "pilet",
+    "piral",
+    "cross-fx",
+    "preact"
+  ],
   "author": "smapiot",
   "homepage": "https://piral.io",
   "license": "MIT"
