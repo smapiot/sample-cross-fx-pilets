@@ -47,7 +47,8 @@
     "react-router-dom": "5.1.2",
     "tslib": "1.10.0",
     "path-to-regexp": "1.8.0",
-    "piral-cli": "^0.10.0-pre.839"
+    "piral-cli": "0.14.0",
+    "piral-cli-webpack5": "0.14.0"
   },
   "peerDependencies": {
     "@angular/common": "*",
