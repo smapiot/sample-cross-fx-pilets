@@ -44,7 +44,7 @@
     "react-router-dom": "5.1.2",
     "riot": "4.11.0",
     "rxjs": "6.5.4",
-    "sample-cross-fx": "next",
+    "sample-cross-fx": "latest",
     "solid-js": "0.18.7",
     "tslib": "1.11.1",
     "typescript": "latest",

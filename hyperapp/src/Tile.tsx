@@ -21,3 +21,4 @@ export const Tile: Component<TileComponentProps, typeof state, typeof actions> =
       <button onclick={() => actions.down(1)}>-</button>
     </div>
   );
+};

@@ -7,7 +7,7 @@
   "devDependencies": {
     "parcel-plugin-svelte": "^4.0.5",
     "svelte": "^3.16.5",
-    "sample-cross-fx": "next",
+    "sample-cross-fx": "latest",
     "@types/react": "^16.8.2",
     "@types/react-dom": "^16.8.0",
     "@types/react-router": "^5.0.0",

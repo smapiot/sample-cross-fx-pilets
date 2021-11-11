@@ -46,7 +46,7 @@
     "react-router-dom": "5.1.2",
     "riot": "4.7.2",
     "rxjs": "6.5.3",
-    "sample-cross-fx": "next",
+    "sample-cross-fx": "latest",
     "tslib": "1.10.0",
     "typescript": "latest",
     "vue": "2.6.10",
