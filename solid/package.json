@@ -1,6 +1,6 @@
 {
   "name": "@cross-fx-pilet/solid",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The cross framework sample pilet for Solid.",
   "main": "dist/index.js",
   "importmap": {
